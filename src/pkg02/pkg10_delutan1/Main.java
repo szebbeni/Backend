@@ -35,11 +35,28 @@ public class Main {
         
         // Konverzió
         String szam = "12";
-        System.out.println(szam + 10);
+        System.out.println(szam + 10); // 1210
         // Inteer.pasreInt(STRING)
         Integer szamInt = Integer.parseInt(szam);
-        System.out.println(szamInt + 10);
+        System.out.println(szamInt + 10); // 22
+        
+        // Implicit - kisebből nagyobbra --> nics adatvesztés
+        int num = 100; // 100
+        double doubleNum = num; // 100.0
+        System.out.println(doubleNum);
+        
+        // Explicit - nagyobbról kisebbre --> adatvesztés
+        doubleNum = 100.5;
+        num = (int) doubleNum;
+        System.out.println(num);
+        
+        // String immutábilis
+        String sz1 = "alma";
+        sz1 = "almafa";
+        
         be.close();
+        
+        // komment
     }
     
 }
